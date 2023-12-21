@@ -1,0 +1,82 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set a background color and font family for the entire page */
+  body {
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  /* Style the header section */
+
+  
+  /* Style the login container */
+  .login-page {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 300px;
+    border-color: aquamarine;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  /* Style the login form */
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .login-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the Back button */
+  .cancelbtn {
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Style the Forget and Reset Password links */
+  .forget-pass,
+  .reset-pass {
+    margin-top: 10px;
+  }
+  
+  /* Style the "Logout" and "Help" buttons in the header */
+  .log,
+  .help {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

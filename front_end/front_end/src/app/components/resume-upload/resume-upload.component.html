@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Application Form</title>
+
+</head>
+<body>
+  <div class="container">
+    <h1>Student Application Form</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required [(ngModel)]="formData.name" #nameField="ngModel"><br>
+      <div *ngIf="nameField.invalid && (nameField.dirty || nameField.touched)" class="error">
+        Name is required.
+      </div>
+
+      <label for="email">Email ID:</label>
+      <input type="email" id="email" name="email" required [(ngModel)]="formData.email" #emailField="ngModel"><br>
+      <div *ngIf="emailField.invalid && (emailField.dirty || emailField.touched)" class="error">
+        Enter a valid email address.
+      </div>
+
+      <label for="rollNumber">Roll Number:</label>
+      <input type="text" id="rollNumber" name="rollNumber" required [(ngModel)]="formData.rollNumber" #rollNumberField="ngModel"><br>
+      <div *ngIf="rollNumberField.invalid && (rollNumberField.dirty || rollNumberField.touched)" class="error">
+        Roll Number is required.
+      </div>
+
+      <label for="resume">Upload Resume (PDF):</label>
+      <input type="file" id="resume" name="resume" accept=".pdf" required (change)="onFileSelected($event)"><br>
+      <div *ngIf="resumeFileInvalid" class="error">
+        Please select a PDF file.
+      </div>
+
+      <button type="submit" [disabled]="isFormInvalid()" (click)="Submit()">Submit</button>
+  </div>
+</body>
+</html>

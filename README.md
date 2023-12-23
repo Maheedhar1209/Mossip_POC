@@ -13,8 +13,6 @@ Our web application centers around a login form that captures user details, incl
 What is JWT?
 
 JWT (JSON Web Token) is a compact, URL-safe means of representing claims between two parties. In the context of our project, JWTs are used for secure communication between the frontend and backend.
-
-JWT Algorithms Used
 We implemented JWT in Spring Boot using various algorithms for signature verification and encryption. Common algorithms include HMAC (HS256), RSASSA-PKCS1-v1_5 (RS256), and ECDSA (ES256).
 
 What is a Verifiable Credential?
@@ -22,10 +20,12 @@ What is a Verifiable Credential?
 A Verifiable Credential is a tamper-evident credential that enables secure data sharing. It is typically associated with a subject, issuer, and various claims.
 
 Process of Generating Verifiable Credential in Spring Boot:
-Submission of Form Data: The user submits the login form with details.
-Backend Processing: The Spring Boot backend processes the form data.
-Verifiable Credential Generation: Based on the processed data, the backend generates a Verifiable Credential.
-JWT Token Generation: Simultaneously, a JWT token is created for secure communication.
+
+1.Submission of Form Data: The user submits the login form with details.
+2.Backend Processing: The Spring Boot backend processes the form data.
+3.Verifiable Credential Generation: Based on the processed data, the backend generates a Verifiable Credential.
+4.JWT Token Generation: Simultaneously, a JWT token is created for secure communication.
+
 Selective Disclosure JWT
 
 As an extension of JWT, Selective Disclosure JWT allows users to share specific claims from their JWT token, enhancing privacy and security.

@@ -1,6 +1,6 @@
 Project Title
 
-Advanced Authentication and Data Sharing
+POC
 
 Project Overview
 
@@ -39,7 +39,9 @@ Frontend
 HTML: Used for structuring the web pages.
 CSS: Used for styling the web pages.
 Angular: A powerful frontend framework for building dynamic web applications.
+
 Backend
 Spring Boot: A Java-based framework for creating standalone, production-grade Spring-based applications.
+
 Database
 SQL: A relational database for storing and retrieving user data securely.

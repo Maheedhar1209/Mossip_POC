@@ -22,8 +22,11 @@ A Verifiable Credential is a tamper-evident credential that enables secure data 
 Process of Generating Verifiable Credential in Spring Boot:
 
 1.Submission of Form Data: The user submits the login form with details.
+
 2.Backend Processing: The Spring Boot backend processes the form data.
+
 3.Verifiable Credential Generation: Based on the processed data, the backend generates a Verifiable Credential.
+
 4.JWT Token Generation: Simultaneously, a JWT token is created for secure communication.
 
 Selective Disclosure JWT
@@ -31,17 +34,22 @@ Selective Disclosure JWT
 As an extension of JWT, Selective Disclosure JWT allows users to share specific claims from their JWT token, enhancing privacy and security.
 
 Example of Selective Disclosure JWT:
+
 Consider a scenario where a user has a JWT token with claims for username, email, and role. With Selective Disclosure JWT, the user can selectively share only the username claim with a third party, keeping the other information confidential.
 
 Tools Used:
 
 Frontend
 HTML: Used for structuring the web pages.
+
 CSS: Used for styling the web pages.
+
 Angular: A powerful frontend framework for building dynamic web applications.
 
 Backend
+
 Spring Boot: A Java-based framework for creating standalone, production-grade Spring-based applications.
 
 Database
+
 SQL: A relational database for storing and retrieving user data securely.

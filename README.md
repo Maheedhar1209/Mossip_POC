@@ -22,11 +22,8 @@ A Verifiable Credential is a tamper-evident credential that enables secure data 
 Process of Generating Verifiable Credential in Spring Boot:
 
 1.Submission of Form Data: The user submits the login form with details.
-
 2.Backend Processing: The Spring Boot backend processes the form data.
-
 3.Verifiable Credential Generation: Based on the processed data, the backend generates a Verifiable Credential.
-
 4.JWT Token Generation: Simultaneously, a JWT token is created for secure communication.
 
 Selective Disclosure JWT

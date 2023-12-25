@@ -53,3 +53,9 @@ Spring Boot: A Java-based framework for creating standalone, production-grade Sp
 Database
 
 SQL: A relational database for storing and retrieving user data securely.
+
+Future Work
+
+The request library is currently specific to this application and can be made genralized.
+
+Example: The application should support multiple credential like Aadhar, Driving Lisence, Pan, Voter ID etc and can specifically use one of the credentials selectively for authentication.
